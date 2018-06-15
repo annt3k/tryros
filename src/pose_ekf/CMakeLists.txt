@@ -129,10 +129,10 @@ catkin_package(
 add_executable(pose_ekf src/pose_ekf_node.cpp src/pose_ekf.cpp src/conversion.cpp)
 add_dependencies(pose_ekf pose_ekf_generate_messages_cpp)
 target_link_libraries(pose_ekf
-		${catkin_LIBRARIES}
-		${EIGEN_LIBRARIES}
+    ${catkin_LIBRARIES}
+    ${EIGEN_LIBRARIES}
     ${GeographicLib_LIBRARIES}
-		)
+)
 
 ###########
 ## Build ##
